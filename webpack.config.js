@@ -5,7 +5,6 @@ const TerserPlugin =            require("terser-webpack-plugin");
 const MiniCssExtractPlugin =    require("mini-css-extract-plugin");
 const CopyWebpackPlugin =       require("copy-webpack-plugin");
 const {CleanWebpackPlugin} =    require("clean-webpack-plugin");
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function generateHtmlPlugins(tmplDir){
     const tmplFiles = fs.readdirSync(path.resolve(__dirname, tmplDir));
@@ -80,7 +79,11 @@ const config = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-              }
+            },
+            {
+                test: /\.(ttf?otf|eot|woff|woff2)$/,
+                use: ['file-loader']
+            }
         ]
     },
     plugins:[
@@ -93,7 +96,10 @@ const config = {
                     from:ASSETS+'images',
                     to:ASSETS_DIST+'images'
                 },
-
+                {
+                    from:ASSETS+'fonts',
+                    to:ASSETS_DIST+'fonts'
+                },
             ]
         })
     ].concat(htmlPlugins)
