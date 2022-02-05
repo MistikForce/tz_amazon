@@ -24,5 +24,12 @@ a {
         color: #fff
     }
 }
-
+li, ul {
+    list-style: none;
+}
 @import "header";
+main{
+    display: flex;
+    gap: 25px;
+}
+@import "banner";
