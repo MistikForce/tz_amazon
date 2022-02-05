@@ -28,8 +28,9 @@ li, ul {
     list-style: none;
 }
 @import "header";
-main{
+.main-content_wrap{
     display: flex;
     gap: 25px;
 }
 @import "banner";
+@import "results_widget";
