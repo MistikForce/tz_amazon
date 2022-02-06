@@ -27,10 +27,31 @@ a {
 li, ul {
     list-style: none;
 }
+.container{
+    max-width: 1500px;
+}
 @import "header";
-.main-content_wrap{
-    display: flex;
-    gap: 25px;
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  clear: both;
+}
+section {
+  float: right;
+  width: 80%;
+}
+aside {
+    width: 17.5%;
+    margin-right: 2.5%;
+    float: left;
+    height: 100%;
 }
 @import "banner";
 @import "results_widget";
+@import "products";

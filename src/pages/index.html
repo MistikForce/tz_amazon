@@ -11,9 +11,10 @@
     <%= _.template(require('./../parts/header.html').default)(data) %>
     <main>
         <%= _.template(require('./../parts/results_widget.html').default)(data) %>
-        <div class="main-content_wrap">
+        <div class="group container">
             <%= _.template(require('./../parts/aside.html').default)(data) %>
             <%= _.template(require('./../parts/banner.html').default)(data) %>
+            <%= _.template(require('./../parts/products.html').default)(data) %>
         </div>
     </main>
 
