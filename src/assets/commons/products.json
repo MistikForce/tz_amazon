@@ -1,0 +1,50 @@
+[
+    {
+        "image":"assets/images/product_item_1.jpg",
+        "description":"Skip Ultimate Triple Poder Détergent Liquide Parfum mymosin 70 Lavages",
+        "qtyRev":"990",
+        "rait":"rait-4.5"
+    },
+    {
+        "image":"assets/images/product_item_1.jpg",
+        "description":"Persil Lessive en poudre universelle (70 lavages) avec technologie de nettoyage en profondeur pour une pureté éclatante.",
+        "qtyRev":"2949",
+        "rait":"rait-5"
+    },
+    {
+        "image":"assets/images/product_item_1.jpg",
+        "description":"Le Chat L'Expert Bicarbonate – 40 Lavages (2L) – Lessive Liquide au Bicarbonate – Lessive Blanc et Couleurs",
+        "qtyRev":"49",
+        "rait":"rait-4.5"
+    },
+    {
+        "image":"assets/images/product_item_1.jpg",
+        "description":"L'Arbre Vert Lessive Liquide pour Peaux Sensibles Famille et Bébé Hypoallergénique Sans Allergènes, 1,5L",
+        "qtyRev":"537",
+        "rait":"rait-4.5"
+    },
+    {
+        "image":"assets/images/product_item_1.jpg",
+        "description":"X•TRA Total+ – Lessive Liquide Universelle – 25 Lavages (1.25L) – Blanc et Couleur",
+        "qtyRev":"863",
+        "rait":"rait-4.5"
+    },
+    {
+        "image":"assets/images/product_item_1.jpg",
+        "description":"Love Home and Planet Lessive Liquide Lavande & Huile d'Argan, Ecolabel, 95% d'ingrédient d'origine végétale, 750ML x15 Lavages",
+        "qtyRev":"69",
+        "rait":"rait-4.5"
+    },
+    {
+        "image":"assets/images/product_item_1.jpg",
+        "description":"Omo Lessive Liquide Lavande & Patchouli, Formule Testée Dermatologiquement, 2L",
+        "qtyRev":"80",
+        "rait":"rait-4.5"
+    },
+    {
+        "image":"assets/images/product_item_1.jpg",
+        "description":"Mir Laine & Délicats Baume de Soin – 25 Lavages (1.5L) – Lessive Liquide Spéciale Vêtements en Laine & Textiles Délicats",
+        "qtyRev":"336",
+        "rait":"rait-4.5"
+    }
+]

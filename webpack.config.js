@@ -100,6 +100,10 @@ const config = {
                     from:ASSETS+'fonts',
                     to:ASSETS_DIST+'fonts'
                 },
+                {
+                    from:ASSETS+'commons',
+                    to:ASSETS_DIST+'commons'
+                },
             ]
         })
     ].concat(htmlPlugins)
