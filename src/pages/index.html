@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 <body>
+    <%= _.template(require('./../parts/mobile_menu.html').default)(data) %>
     <%= _.template(require('./../parts/header_mobile.html').default)(data) %>
     <%= _.template(require('./../parts/header.html').default)(data) %>
     <main>
@@ -20,5 +21,15 @@
     </main>
 
     <script src="assets/js/all.min.js"></script>
+    <script>
+        function openMobMenu(){
+            event.preventDefault();
+            document.body.classList.add('open')
+        }
+        function closeMobMenu(){
+            event.preventDefault();
+            document.body.classList.remove('open')
+        }
+    </script>
 </body>
 </html>
