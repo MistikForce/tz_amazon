@@ -4,7 +4,44 @@
     .results_widget{
         display: none;
     }
-    #header_mobile{
+    #header_mobile,
+    .results_widget_mob{
         display: block;
+    }
+    .banner {
+        float:none;
+        width: 100%;
+        a{
+            color: #0f1111;
+            display: block;
+        }
+        .banner_head{
+            display: none;
+        }
+        .banner_head.mobile{
+            display: block;
+            .link{
+                color: #000;
+                font-size: 16px;
+            }
+            .sublink{
+                color: #878787;
+                font-size: 12px;
+            }
+        }
+        .banner_items{
+            .item{
+                max-width: 375px;
+                a{
+                    display: block;
+                }
+                .image{
+                    padding:0;
+                }
+                .rait_wrap{
+                    display: none;
+                }
+            }
+        }
     }
 }
