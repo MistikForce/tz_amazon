@@ -30,9 +30,10 @@ li, ul {
 .container{
     max-width: 1500px;
 }
-@import "header";
 @import "header_mobile";
 @import "mobile_menu";
+@import "header";
+@import "modal_menu";
 .group::before,
 .group::after {
   content: "";

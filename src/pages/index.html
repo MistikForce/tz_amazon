@@ -11,6 +11,7 @@
     <%= _.template(require('./../parts/mobile_menu.html').default)(data) %>
     <%= _.template(require('./../parts/header_mobile.html').default)(data) %>
     <%= _.template(require('./../parts/header.html').default)(data) %>
+    <%= _.template(require('./../parts/modal_menu.html').default)(data) %>
     <main>
         <%= _.template(require('./../parts/results_widget.html').default)(data) %>
         <div class="group container">
@@ -29,6 +30,14 @@
         function closeMobMenu(){
             event.preventDefault();
             document.body.classList.remove('open')
+        }
+        function openModalMenu(){
+            event.preventDefault();
+            document.body.classList.add('open_modal_menu')
+        }
+        function closeModalMenu(){
+            event.preventDefault();
+            document.body.classList.remove('open_modal_menu')
         }
     </script>
 </body>
