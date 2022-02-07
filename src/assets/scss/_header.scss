@@ -162,22 +162,22 @@
     display: flex;
     align-items: center;
     color: #fff;
-    padding: 0 18px 0 15px;
+    position: relative;
+    padding: 0 18px 0 9px;
     .nav_left{
         span{
             font-weight: 700;
-            margin-right: 10px;
         }
         a{
             display: block;
             position: relative;
-            padding-left: 20px;
+            padding: 2.5px 10px 2.5px 32px;
         }
         .burger {
             background-color: #fff;
             height: 2px;
             width: 17px;
-            left: 0;
+            left: 10px;
             top: 50%;
             transform: translateY(-50%);
             position: absolute;
@@ -201,49 +201,10 @@
     }
     .nav_center{
         display: flex;
+        align-items: center;
         a{
             padding: 4px 9px;
             line-height: 14px;
-        }
-    }
-    .nav_right{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        .blue {
-            color: #01a7e1;
-            font-size: 22px;
-            font-weight: 700;
-            padding-left: 40px;
-            position: relative;
-            &::before{
-                display: block;
-                content: '';
-                height: 32px;
-                width: 32px;
-                border-radius: 50%;
-                background-color: #01a7e1;
-                position: absolute;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-            }
-            &::after{
-                display: block;
-                content: '';
-                border: 6px solid transparent;
-                border-left: 12px solid #fff;
-                position: absolute;
-                top: 50%;
-                left: 12px;
-                transform: translateY(-50%);
-            }
-        }
-        .text {
-            border-left: 1px solid #fff;
-            font-size: 22px;
-            padding-left: 8px;
-            line-height: 30px;
         }
     }
 }
