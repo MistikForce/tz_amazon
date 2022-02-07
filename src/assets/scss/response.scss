@@ -1,0 +1,10 @@
+@media screen and (max-width:1150px){
+    #header,
+    aside,
+    .results_widget{
+        display: none;
+    }
+    #header_mobile{
+        display: block;
+    }
+}

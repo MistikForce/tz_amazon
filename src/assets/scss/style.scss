@@ -31,6 +31,7 @@ li, ul {
     max-width: 1500px;
 }
 @import "header";
+@import "header_mobile";
 .group::before,
 .group::after {
   content: "";
@@ -55,3 +56,4 @@ aside {
 @import "banner";
 @import "results_widget";
 @import "products";
+@import "response";

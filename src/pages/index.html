@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 <body>
+    <%= _.template(require('./../parts/header_mobile.html').default)(data) %>
     <%= _.template(require('./../parts/header.html').default)(data) %>
     <main>
         <%= _.template(require('./../parts/results_widget.html').default)(data) %>

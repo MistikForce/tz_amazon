@@ -1,0 +1,178 @@
+#header_mobile {
+    display: none;
+    height: 142px;
+    background-color: #232f3e;
+    a{
+        display: block;
+    }
+    .top{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+       .left{
+           display: flex;
+           align-items: center;
+            .header_logo {
+                display: block;
+                background-image: url(../images/sprite_navbar.png);
+                background-position: -8px -87px;
+                width: 80px;
+                height: 26px;
+                position: relative;
+                margin-right: 10px;
+                .dot_country{
+                    position: absolute;
+                    right: -15px;
+                    top: -3px;
+                }
+            }
+            .burger_link{
+                height: 50px;
+                width: 48px;
+                padding-left: 4px;
+                margin-right: 0px;
+            }
+            .burger {
+                background-color: #fff;
+                height: 2px;
+                width: 20px;
+                left: 10px;
+                top: 23px;
+                transform: translateY(-50%);
+                position: relative;
+                &::before,
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background-color: #fff;
+                    height: 2px;
+                    width: 20px;
+                    left: 0;
+                }
+                &::before{
+                    top: -8px;
+                }
+                &::after{
+                    bottom: -8px;
+                }
+            }
+       }
+       .right{
+           display: flex;
+           align-items: center;
+           font-size: 13px;
+           padding-right: 5px;
+           position: relative;
+           top: -3px;
+           .login {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .text{                
+                  padding-top: 4px;
+                }
+               .icon{
+                    background-image: url(../images/sprite_log.png);
+                    background-position: -141px -300px;
+                    background-size: 275px;
+                    width: 35px;
+                    height: 27px;
+                }
+            }
+            .header_cart{
+                height: 50px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+                .cart_img{
+                    width: 37px;
+                    height: 27px;
+                    background-image: url(../images/sprite_log.png);
+                    background-size: 275px;
+                    background-position: -10px -240px;
+                    position: relative;
+                    top: 2px;
+                    right: 2px;
+                }
+                .cart_qty{
+                    position: absolute;
+                    color: #f08804;
+                    font-weight: 700;
+                    font-size: 16px;
+                    top: -7px;
+                    left: 17px;
+                }
+            }
+        }
+    }
+    .search {
+        height: 48px;
+        form{
+            width: 98.5%;
+            margin: 0 auto;
+            .search_wrap {
+                height: 44px;
+                position: relative;
+                display: flex;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .field_search{
+                width: 100%;
+                border: 0;
+                outline: 0;
+                padding-left: 10px;
+            }
+            .btn_search {
+                border: none;
+                overflow: hidden;
+                border-radius: 8px;
+                background-color: #febd69;
+                width: 50px;
+                height: 44px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                .icon{
+                    position: absolute;
+                    top: 10px;
+                    left: 12px;
+                    background-image: url(../images/sprite_log.png);
+                    background-position: -73px -239px;
+                    background-size: 275px;
+                    width: 27px;
+                    height: 25px;
+                    -webkit-filter: invert(100%);
+                }
+            }
+        }
+    }
+    .loc_bar {
+        height: 44px;
+        background-color: #37475a;
+        .loc {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            height: 44px;
+            padding: 0 0 0 10px;
+            .wrap{
+                display: flex;
+            }
+            .text{
+                color: #fff;
+                font-size: 13px;
+            }
+            .icon {
+                background-image: url(../images/sprite_navbar.png);
+                background-position: -71px -378px;
+                width: 16px;
+                height: 30px;
+                align-self: flex-end;
+            }
+        }
+    }
+}
