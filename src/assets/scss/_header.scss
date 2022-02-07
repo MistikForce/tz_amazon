@@ -14,52 +14,65 @@
     height: 60px;
     display: flex;
     gap: 2px;
+    justify-content: space-between;
     align-items: center;
     padding: 0 14px 0 12px;
-    .reg_text{
+    .sm_text{
         font-size: 12px;
-        line-height: 14px;
+        line-height: 12px;
     }
     .text {
         font-weight: 700;  
+        line-height: 14px;
     }
-    .header_logo {
-        display: block;
-        background-image: url(../images/sprite_navbar.png);
-        background-position: -5px -38px;
-        width: 124px;
-        height: 50px;
-        padding: 5px;
-        overflow: hidden;
-        position: relative;
-        .dot_country{
-            position: absolute;
-            right: 5px;
-            top: 12px;
-        }
-    }
-    .header_location {
+    .header_left {
         display: flex;
-        align-items: center;
-        gap: 4px;
-        height: 50px;
-        padding: 0 10px;
-        .icon {
+        margin-left: 4px;
+        flex-shrink: 0;
+        .header_logo {
+            display: block;
             background-image: url(../images/sprite_navbar.png);
-            background-position: -71px -378px;
-            width: 16px;
-            height: 30px;
-            align-self: flex-end;
+            background-position: -5px -38px;
+            width: 124px;
+            height: 50px;
+            padding: 5px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 6px;
+            .dot_country{
+                position: absolute;
+                right: 5px;
+                top: 12px;
+            }
+        }
+        .header_location {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            height: 50px;
+            padding: 0 0 0 10px;
+            .sm_text{
+                color: #ccc;
+            }
+            .icon {
+                background-image: url(../images/sprite_navbar.png);
+                background-position: -71px -378px;
+                width: 16px;
+                height: 30px;
+                align-self: flex-end;
+            }
         }
     }
     .header_form{
-        max-width: 880px;
+        padding: 0 10px 0 3px;
         width: 100%;
-        padding: 0 10px;
+        max-width: 1165px;
+        flex-shrink: 1;
     }
     form{
         display: flex;
         height: 40px;
+        width: 100%;
         .form_select{
             background-color: #f3f3f3;
             border-top-left-radius: 5px;
@@ -76,7 +89,6 @@
             overflow: hidden;
         }
         .form_search{
-            max-width: 700px;
             width: 100%;
         }
         .search_field{
@@ -91,37 +103,56 @@
             width: 45px;
         }
     }
-    .header_tools,
-    .header_element {
-        height: 50px;
-        padding: 6.5px 10px;
-    }
-    .header_cart{
-        height: 50px;
-        width: 106px;
-        position: relative;
+    .header_tools{
         display: flex;
-        align-items: flex-end;
-        padding: 0 10px;
-        .cart_img{
-            height: 40px;
-            width: 40px;
-            background-image: url(../images/sprite_navbar.png);
-            background-position: -9px -336px;
+        align-items: center;
+        flex-shrink: 0;
+        .header_log,
+        .header_element {
+            height: 50px;
+            padding: 11.5px 10px;
+        }
+        .header_log {
+            .text{
+                position: relative;
+                &::after{
+                    content: '';
+                    display: block;
+                    border: 4px solid transparent;
+                    border-top: 4px solid #a7acb2;
+                    position: absolute;
+                    top: 7px;
+                    right: 10px;
+                }
+            }
+        }
+        .header_cart{
+            height: 50px;
+            width: 106px;
             position: relative;
-        }
-        .cart_qty{
-            position: absolute;
-            color: #f08804;
-            font-weight: 700;
-            font-size: 16px;
-            top: -4px;
-            left: 19px;
-        }
-        .text {
-            position: absolute;
-            right: 10px;
-    bottom: 7px;
+            display: flex;
+            align-items: flex-end;
+            padding: 0 10px;
+            .cart_img{
+                height: 40px;
+                width: 40px;
+                background-image: url(../images/sprite_navbar.png);
+                background-position: -9px -336px;
+                position: relative;
+            }
+            .cart_qty{
+                position: absolute;
+                color: #f08804;
+                font-weight: 700;
+                font-size: 16px;
+                top: -4px;
+                left: 19px;
+            }
+            .text {
+                position: absolute;
+                right: 10px;
+                bottom: 7px;
+            }
         }
     }
 }
