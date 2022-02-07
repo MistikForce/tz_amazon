@@ -11,6 +11,12 @@
     .banner {
         float:none;
         width: 100%;
+        .banner_head.mobile{
+            display: block;
+        }
+        .item.mobile{
+            display: block;
+        }
         a{
             color: #0f1111;
             display: block;
@@ -30,17 +36,45 @@
             }
         }
         .banner_items{
+            gap: 10px;
             .item{
+                width: calc(25% - 7.5px);
                 max-width: 375px;
                 a{
                     display: block;
                 }
                 .image{
-                    padding:0;
+                    padding:10px 0;
+                    height: 120px;
                 }
                 .rait_wrap{
                     display: none;
                 }
+            }
+        }
+    }
+    .products{
+        width: 100%;
+        .item{
+            width: 100%;
+            height: 170px;
+            flex-direction: row;
+            max-width: none;
+            .item_link{
+                display: flex;
+                width: 100%;
+            }
+            .image{
+                width: 42%;
+                height: 170px;
+                img{
+                    height: 100%;
+                }
+            }
+            .text_wrap {
+                padding-left: 7px;
+                padding-top: 5px;
+                width: 58%;
             }
         }
     }
