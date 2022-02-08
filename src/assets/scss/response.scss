@@ -79,3 +79,17 @@
         }
     }
 }
+
+
+
+@media screen and (max-width:650px){
+    .banner {
+        .banner_items{
+            flex-wrap: wrap;
+            gap: 10px;
+            .item{
+                width: calc(50% - 5px);
+            }
+        }
+    }
+}
