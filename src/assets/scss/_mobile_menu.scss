@@ -11,7 +11,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #232f3e;
+    background-color: $headerDarkGray;
     color: #111;
     height: auto;
     box-shadow: 0 0 5px #684d9b54;
@@ -19,7 +19,7 @@
     transition: all .4s ease;
     z-index: 1000;
     height:100vh;
-    .close{
+    .close {
         color: #fff;
         font-size: 40px;
         position: absolute;
@@ -30,20 +30,20 @@
         max-width: 100%;
         height: 178px;
         position: relative;
-        .login{
+        .login {
             height: 60px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             padding: 20px 20px;
-            .icon{
+            .icon {
                 background-image: url(../images/sprite_log.png);
                 background-position: -170px -268px;
                 background-size: 275px;
                 height: 24px;
                 width: 24px;
             }
-            .text{
+            .text {
                 padding-right: 4px;
                 font-size: 14px;
                 line-height: 14px;
@@ -52,17 +52,17 @@
         .middle {
             height: 68px;
             padding: 0 20px;
-            .text{
+            .text {
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 20px;
             }
-            .subtext{
+            .subtext {
                 font-size: 28px;
                 line-height: 28px;
             }
         }
-        .home{
+        .home {
             height: 60px;
             width: 100%;
             background-color: #fff;
@@ -71,12 +71,12 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 20px;
-            .text{
+            .text {
                 font-size: 19px;
                 line-height: 24px;
                 font-weight: 700;
             }
-            .icon{
+            .icon {
                 background-image: url(../images/sprite_log.png);
                 background-position: -142px -271px;
                 background-size: 275px;
@@ -86,7 +86,7 @@
         }
     }
     .sidemenu {
-        background-color: #d5dbdb;
+        background-color: $modalLight;
         max-height: 100vh;
         overflow-y: scroll;
         padding-top: 16px;
@@ -104,7 +104,7 @@
                 padding: 15px 20px;
                 font-size: 16px;
             }
-            div{
+            div {
                 font-weight: 700;
                 font-size: 19px;
                 line-height: 24px;
@@ -114,9 +114,9 @@
 }
 
 .open {
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     #page_overlay {
         display: block;
     }

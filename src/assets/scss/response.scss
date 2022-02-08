@@ -1,70 +1,70 @@
 @media screen and (max-width:1150px){
     #header,
     aside,
-    .results_widget{
+    .results_widget {
         display: none;
     }
     #header_mobile,
-    .results_widget_mob{
+    .results_widget_mob {
         display: block;
     }
     .banner {
         float:none;
         width: 100%;
-        .banner_head.mobile{
+        .banner_head.mobile {
             display: block;
         }
-        .item.mobile{
+        .item.mobile {
             display: block;
         }
-        a{
+        a {
             color: #0f1111;
             display: block;
         }
-        .banner_head{
+        .banner_head {
             display: none;
         }
-        .banner_head.mobile{
+        .banner_head.mobile {
             display: block;
             .link{
                 color: #000;
                 font-size: 16px;
             }
-            .sublink{
-                color: #878787;
+            .sublink {
+                color: $lightGray;
                 font-size: 12px;
             }
         }
-        .banner_items{
+        .banner_items {
             gap: 10px;
-            .item{
+            .item {
                 width: calc(25% - 7.5px);
                 max-width: 375px;
-                a{
+                a {
                     display: block;
                 }
-                .image{
+                .image {
                     padding:10px 0;
                     height: 120px;
                 }
-                .rait_wrap{
+                .rait_wrap {
                     display: none;
                 }
             }
         }
     }
-    .products{
+    .products {
         width: 100%;
-        .item{
+        .item {
             width: 100%;
             height: 170px;
             flex-direction: row;
             max-width: none;
-            .item_link{
+            .item_link {
                 display: flex;
                 width: 100%;
             }
-            .image{
+            .image {
                 width: 42%;
                 height: 170px;
                 img{
@@ -84,10 +84,10 @@
 
 @media screen and (max-width:650px){
     .banner {
-        .banner_items{
+        .banner_items {
             flex-wrap: wrap;
             gap: 10px;
-            .item{
+            .item {
                 width: calc(50% - 5px);
             }
         }

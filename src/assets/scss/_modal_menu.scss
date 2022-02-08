@@ -2,15 +2,15 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #232f3e;
+    background-color: $headerDarkGray;
     color: #111;
     height: auto;
     box-shadow: 0 0 5px #684d9b54;
     width: 365px;
     transition: all .4s ease;
     z-index: 1000;
-    height:100vh;
-    .close{
+    height: 100vh;
+    .close {
         color: #fff;
         font-size: 40px;
         position: absolute;
@@ -24,12 +24,12 @@
         display: flex;
         align-items: center;
         padding-left: 35px;
-        .text{
+        .text {
             font-size: 19px;
             line-height: 25px;
             font-weight: 700;
         }
-        .icon{
+        .icon {
             background-image: url(../images/sprite_navbar.png);
             background-position: -137px -340px;
             height: 25px;
@@ -38,7 +38,7 @@
         }
     }
     .sidemenu {
-        background-color: #d5dbdb;
+        background-color: $modalLight;
         max-height: 100vh;
         overflow-y: scroll;
         ul {
@@ -46,8 +46,8 @@
             background-color: #fff;
             margin: 0;
         }
-        ul:not(:last-child){
-            border-bottom: 1px solid #d5dbdb;
+        ul:not(:last-child) {
+            border-bottom: 1px solid $modalLight;
         }
         li {
             position: relative;
@@ -58,7 +58,7 @@
                 padding: 12px 20px 12px 36px;
                 font-size: 14px;
             }
-            div{
+            div {
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 24px;
@@ -68,9 +68,9 @@
 }
 
 .open_modal_menu {
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     #page_overlay {
         display: block;
     }

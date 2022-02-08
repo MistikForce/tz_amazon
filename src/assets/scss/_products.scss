@@ -1,35 +1,35 @@
-.products{
-    h3{
+.products {
+    h3 {
         color: #838383;
         font-size: 18px;
-        .italic{
+        .italic {
             display: inline;
             font-weight: 700;
             font-style: italic;
-            color: #007185;
+            color: $blueLink;
         }
     }
-    a{
+    a {
         color: #000;
         display: block;
     }
-    .product_list{
+    .product_list {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         padding-left: 0;
     }
-    .item{
+    .item {
         width: calc(25% - 15px);
         max-width: 274px;
         display: flex;
         flex-direction: column;
         border: 1px solid #f5f5f5;
         border-radius: 4px;
-        .image{
+        .image {
             display: flex;
             justify-content: center;
-            background-color: #f7f8f8;
+            background-color: $bgProd;
             height: 273px;
             img{max-width: 100%;}
         }
@@ -42,29 +42,29 @@
             margin-bottom: 2px;
         }
         .rait-4_5,
-        .rait-5{
+        .rait-5 {
             background-image: url(../images/sprite_rait.png);
             background-position: top -26px left -84px;
             display: inline-block;
             width: 80px;
             height: 18px;
         }
-        .rait-5{
+        .rait-5 {
             background-position: top -34px left -166px;
         }
-        .qty{
+        .qty {
             display: inline-block;
-            color: #007185;
+            color: $blueLink;
             position: relative;
             top: -2px;
             left: 10px;
-            &::before{
+            &::before {
                 content: '';
                 display: block;
                 height: 6px;
                 width: 6px;
-                border-bottom: 2px solid #878787;
-                border-left: 2px solid #878787;
+                border-bottom: 2px solid $lightGray;
+                border-left: 2px solid $lightGray;
                 position: absolute;
                 left: -10px;
                 top: 9px;
