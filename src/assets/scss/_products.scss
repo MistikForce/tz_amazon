@@ -31,7 +31,9 @@
             justify-content: center;
             background-color: $bgProd;
             height: 273px;
-            img{max-width: 100%;}
+            img {
+                max-width: 100%;
+            }
         }
         .text {
             overflow: hidden;
